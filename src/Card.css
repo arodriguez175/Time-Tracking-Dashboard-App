@@ -1,3 +1,4 @@
+/* Desktop View */
 .background-card {
   border-radius: 15px;
   height: 235px;
@@ -43,6 +44,7 @@
   padding-top: 12px;
   padding-bottom: 12px;
   margin-left: 25px;
+  margin-right: 25px;
 }
 
 .activity-titles {
@@ -64,7 +66,26 @@
   margin-right: 15px;
 }
 
-/* Mobile View */
+.modalButton {
+  display: unset;
+  background-color: hsl(246, 80%, 60%);
+  color: #fff;
+  margin-top: 0;
+  margin-left: 17px;
+  padding: 10px;
+  position: relative;
+  top: -8px;
+}
+
+/* Tablet View */
+@media only screen and (max-width: 768px) {
+  .modalButton {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+/* Mobile Landscape View */
 @media only screen and (max-width: 630px) {
   .grid-container {
     grid-template-columns: auto;
@@ -95,5 +116,21 @@
     margin-right: 6%;
     position: relative;
     bottom: -15%;
+  }
+
+  .modalButton {
+    width: unset;
+    margin-left: 7px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .grid-item .card-body p {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .previous-time {
+    float: left;
   }
 }

@@ -28,6 +28,18 @@ p {
   margin: 0;
 }
 
+.demo-data {
+  color: #fff;
+  margin: auto;
+  margin-top: 50%;
+}
+
+.demo-data button {
+  color: #fff;
+  background-color: hsl(246, 80%, 60%);
+  padding: 15px;
+}
+
 /* Tablet View */
 @media only screen and (max-width: 768px) {
   .grid-container {
@@ -41,14 +53,6 @@ p {
   .grid-item .card-body p {
     padding-top: 5px;
     padding-bottom: 5px;
-  }
-
-  .grid-item .card-body {
-    height: 63%;
-  }
-
-  .grid-item .background-card {
-    height: 185px;
   }
 
   .grid-item .time {
